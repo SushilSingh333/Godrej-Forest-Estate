@@ -65,9 +65,7 @@ a { text-decoration: none; transition: var(--transition); }
 
 /* ============ NAVBAR ============ */
 .custom-navbar {
-  background: rgba(251, 248, 242, 0.96);
-  backdrop-filter: saturate(180%) blur(14px);
-  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  background: var(--cream-100);
   box-shadow: 0 2px 24px rgba(20, 60, 45, 0.06);
   padding: 0.7rem 0;
   top: var(--nav-top, 38px);
@@ -78,16 +76,17 @@ a { text-decoration: none; transition: var(--transition); }
   box-shadow: 0 6px 30px rgba(20, 60, 45, 0.1);
 }
 .brand-logo {
-  height: 44px;
+  height: 54px;
   width: auto;
-  max-width: 240px;
+  max-width: 280px;
   object-fit: contain;
   display: block;
   transition: var(--transition);
 }
-.custom-navbar.scrolled .brand-logo { height: 38px; }
+.custom-navbar.scrolled .brand-logo { height: 46px; }
+.custom-navbar .brand-logo { mix-blend-mode: multiply; }
 .brand-logo-footer {
-  height: 40px;
+  height: 56px;
   filter: invert(1) brightness(1.6);
 }
 .navbar .nav-link {
@@ -1050,8 +1049,8 @@ a { text-decoration: none; transition: var(--transition); }
   .cta-strip h3 { font-size: 1.5rem; }
   .fab-whatsapp { animation: none; }
   .fab-tip { display: none; }
-  .brand-logo { height: 34px; max-width: 200px; }
-  .custom-navbar.scrolled .brand-logo { height: 30px; }
+  .brand-logo { height: 42px; max-width: 220px; }
+  .custom-navbar.scrolled .brand-logo { height: 38px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .fab-whatsapp { animation: none; }
